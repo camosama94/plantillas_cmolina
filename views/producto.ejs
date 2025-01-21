@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <label for="id">Id</label>
+        <input type="text" name="id" id="id" value="<%= prod.id%>">
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" id="nombre" value="<%= prod.nombre%>">
+        <label for="precio">Precio</label>
+        <input type="text" name="precio" id="precio" value="<%= prod.precio%>">
+        <select name="" id="">
+            <% for( color of prod.colores) {%>
+            <option value="<%= color%>"><%= color%></option>
+            <% }%>
+        </select>
+    </form>
+</body>
+</html>
